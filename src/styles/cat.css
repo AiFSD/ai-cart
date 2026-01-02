@@ -1,0 +1,21 @@
+.cat-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.cat-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;  
+  display: block;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease;
+}
+
+.cat-card:hover .card-img-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}

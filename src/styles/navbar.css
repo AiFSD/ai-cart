@@ -1,0 +1,74 @@
+.navbar-brand  {
+  width: 150px;       
+  height: 80px;
+  overflow: hidden;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:50px;
+}
+
+.logo {
+  height: 100px;   
+  width: auto;
+  transform: rotate(270deg) scale(1.5); 
+  object-fit: contain;
+
+
+}
+.buttons{
+
+     gap:20px;
+     display:flex;
+   margin-top:20px;
+   justify-content:center;
+}
+.con-nav{
+     text-align:center;
+     margin-top:20px;
+    
+}
+.address{
+    padding:10px;
+
+     text-align:center;
+     border-radius:10px;
+}
+.heading{
+     margin-top:20px;
+     font-size:35px;
+     font-family:scale;
+}
+.btn{
+background-color:blue;
+color:white;
+font-weight:bold;
+width:200px;
+height:40px;
+border-radius:10px;
+background-color:green;
+border:1px solid white;
+text-decoration:unset;
+}
+.btn-link{
+background-color:green;
+border:1px solid white;
+text-decoration:unset;
+width:200px;
+height:40px;
+border-radius:10px;
+color:white;
+}
+
+.adrs{
+     border:1px solid silver;
+     margin-top:5px;
+     padding:5px;
+border-radius:20px;
+
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
