@@ -9,31 +9,37 @@ export const category = [
   {
     id: "01",
     img: veggies,
-    title: "Vegetables"
+    title: "Vegetables",
+    route: "/vegetables",
   },
   {
     id: "02",
     img: fruits,
-    title: "Fruits"
+    title: "Fruits",
+    route: "/fruits",
   },
   {
     id: "03",
     img: dairy,
-    title: "Dairy Products"
+    title: "Dairy Products",
+    route: "/dairy",
   },
   {
     id: "04",
     img: beverages,
-    title: "Beverages"
+    title: "Beverages",
+    route: "/beverages",
   },
   {
     id: "05",
     img: grains,
-    title: "Grains"
+    title: "Grains",
+    route: "/grains",
   },
-    {
+  {
     id: "06",
     img: offsale,
-    title: "Hurry Up"
-  }
+    title: "Hurry Up",
+    route: "/discount"
+  },
 ];

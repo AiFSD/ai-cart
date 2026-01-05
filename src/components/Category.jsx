@@ -1,5 +1,6 @@
 import "../styles/cat.css";
 import { category } from "../datas/category";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -7,18 +8,17 @@ const Category = () => {
       <div className="container mt-5">
         <div className="row g-5">
           {category.map((item) => (
-            <div className="col-4">
-              <a href="">
+            <div className="col-lg-4 col-md-6 col-12 ">
+              <Link to={item.route}>
                 <div key={item.id} className="card cat-card text-bg-dark">
                   <img src={item.img} className="cat-img" alt="..." />
                   <div className="card-img-overlay">
                     <h3 className="card-title">{item.title}</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
-      
         </div>
       </div>
     </div>

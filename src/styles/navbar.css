@@ -55,7 +55,7 @@ background-color:green;
 border:1px solid white;
 text-decoration:unset;
 width:200px;
-height:40px;
+height:fit-content;
 border-radius:10px;
 color:white;
 }
