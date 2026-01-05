@@ -9,3 +9,9 @@
   overflow: hidden; 
 
 }
+
+.cartbtn-con{
+  display:flex;
+  justify-content:center;
+ 
+}

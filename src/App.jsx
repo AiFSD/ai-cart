@@ -9,6 +9,7 @@ import Fruits from "./pages/Fruits";
 import Grains from "./pages/Grains";
 import Beverages from "./pages/Beverages";
 import Dairy from "./pages/Dairy";
+import Discount from "./pages/Discount"
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/grains" element={<Grains />} />
           <Route path="/beverages" element={<Beverages />} />
           <Route path="/dairy" element={<Dairy/>} />
+          <Route path="/discount" element={<Discount/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

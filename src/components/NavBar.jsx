@@ -1,6 +1,9 @@
 import "../styles/navbar.css";
 import logo from "../media/logo.png";
+
+
 const NavBar = () => {
+ 
   return (
     <div>
       <div className=" con-nav bg-transparent container-fluid text-center ">
@@ -20,10 +23,10 @@ const NavBar = () => {
           <div className="col-lg-5 col-md-8 col-12">
             <div className="address">
               <label>Delivery to: </label>
-              <a style={{ color: "unset" }} href="">
+              <a  style={{ color: "unset" }} 
+            >
                 <p className="adrs">
-                  {" "}
-                  Lorem ipsum dolor sit amet consectetur adipisicing{" "}
+                
                 </p>
               </a>
             </div>
@@ -35,15 +38,14 @@ const NavBar = () => {
             <div className="buttons">
               <button className="btn">LogIn</button>
               <button className="btn">Register</button>
-              <button type="button" className="btn-link">
-                View Cart
-              </button>
+            
             </div>
           </div>
         </div>
       </div>
 
       <hr></hr>
+
     </div>
   );
 };
