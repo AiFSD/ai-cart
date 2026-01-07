@@ -1,15 +1,17 @@
 import "../styles/cat.css";
 import { category } from "../datas/category";
 import { Link } from "react-router-dom";
+import CartPage from "../pages/cartPage";
 
 const Category = () => {
   return (
     <div>
       <div className="container mt-5">
              <div className="col cartbtn-con">
-              <button style={{height:"60px" , width:"80%", justifyContent:"center",padding:"20px" }} type="button" className="btn-link">
+            <Link to={"/cartpage"}> 
+            <button style={{ justifyContent:"center",padding:"20px" }} type="button" className="btn-link">
                 View Cart
-              </button>
+              </button> </Link> 
           </div>
         <div className="row g-5 mt-5">
      
