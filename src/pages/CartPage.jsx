@@ -1,9 +1,12 @@
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { removeLogic , increaseQty, decreaseQty } from "../redux/cartSlice";
 const CartPage = () => {
-  const items = useSelector((state) => state.addTo.items);
-  console.log(items);
+ const dispatch = useDispatch()
+ const products = useSelector((state) => state.addLogic.products)
+ const totalAmount = products.reduce((sum , item ) => sum + item.quantity * item.price , 0)
   return (
     <div>
       <Link to={"/"}>
@@ -18,44 +21,21 @@ const CartPage = () => {
       </Link>
 
       <div className="container">
-        <div className="table">
-          <table border="1" cellPadding="10" cellSpacing="0">
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Offer</th>
-              </tr>
-            </thead>
-            <tbody>
-              {items.length === 0 ? (
-                <tr>
-                  <td colSpan="4">No items in cart</td>
-                </tr>
-              ) : (
-                items.map((item) => (
-                  <tr key={item.id}>
-                    <td>
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        style={{
-                          width: "80px",
-                          height: "80px",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </td>
-                    <td>{item.name}</td>
-                    <td>₹{item.price}</td>
-                    <td>{item.offer}%</td>
-                  </tr>
-                ))
-              )}
-            </tbody>
-          </table>
-        </div>
+    
+      {products.length === 0 ? "cart is empty" : products.map((item)=> (
+       <div style={{display:"flex" , gap:"10px"}} className="ke" key={item.id}>
+        <h1>product name: {item.name}</h1>
+        <h1>price : {item.price}</h1>
+        <button onClick={() => dispatch(decreaseQty(item.id))}>-</button>
+        <h1>{item.quantity}</h1>
+        <button onClick={() => dispatch(increaseQty(item.id))}>+</button>
+        <button onClick={() => dispatch(removeLogic(item.id))}>
+          remove
+        </button>
+       </div>
+      
+      ))}
+      <h1> sub total: {totalAmount}</h1>
       </div>
     </div>
   );

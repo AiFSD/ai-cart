@@ -1,9 +1,8 @@
 import "../styles/navbar.css";
 import logo from "../media/logo.png";
-
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
- 
   return (
     <div>
       <div className=" con-nav bg-transparent container-fluid text-center ">
@@ -23,11 +22,8 @@ const NavBar = () => {
           <div className="col-lg-5 col-md-8 col-12">
             <div className="address">
               <label>Delivery to: </label>
-              <a  style={{ color: "unset" }} 
-            >
-                <p className="adrs">
-                
-                </p>
+              <a style={{ color: "unset" }}>
+                <p className="adrs"></p>
               </a>
             </div>
           </div>
@@ -37,15 +33,21 @@ const NavBar = () => {
           <div className="col-lg-3 col-md-12 col-12 btn-con">
             <div className="buttons">
               <button className="btn">LogIn</button>
-              <button className="btn">Register</button>
-            
+              <Link to={"/cartpage"}>
+                <button
+                  style={{ justifyContent: "center", padding: "20px" }}
+                  type="button"
+                  className="btn-link"
+                >
+                  View Cart
+                </button>{" "}
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
       <hr></hr>
-
     </div>
   );
 };

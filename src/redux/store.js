@@ -5,7 +5,7 @@ import add from "./cartSlice"
 const store = configureStore({
     reducer: {
         offer : offerreducer,
-    addTo : add
+        addLogic : add
     }
 })
 
