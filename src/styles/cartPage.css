@@ -1,0 +1,40 @@
+.list-group-item{
+     width:200px;
+     text-align:center;
+     display:flex;
+     justify-content:center
+}
+
+.list-group-items{
+     display:flex;
+     gap:20px;
+     padding:10px;
+    
+     
+}
+.btn-cal{
+     width:30px;
+     
+     
+}
+.back-con{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+.cart-con{
+  display:flex;
+ justify-content:center;
+     
+}
+
+.list-group-items{
+ background-color:#cfe2ff;
+ display:flex;
+ align-items:center;
+}
+.list-group-item{
+ background-color:#cfe2ff;
+ display:flex;
+ align-items:center;
+}

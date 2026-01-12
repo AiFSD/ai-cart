@@ -11,10 +11,13 @@ import Beverages from "./pages/Beverages";
 import Dairy from "./pages/Dairy";
 import Discount from "./pages/Discount"
 import CartPage from "./pages/cartPage";
+
 const App = () => {
   return (
     <div>
+    
       <BrowserRouter>
+      
         <NavBar />
         <Routes>
           <Route path="/" element={<Category />} />
@@ -25,6 +28,7 @@ const App = () => {
           <Route path="/dairy" element={<Dairy/>} />
           <Route path="/discount" element={<Discount/>}/>
           <Route path="/cartpage" element={<CartPage/>}/>
+
         </Routes>
         <Footer />
       </BrowserRouter>

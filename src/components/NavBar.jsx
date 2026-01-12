@@ -1,7 +1,7 @@
 import "../styles/navbar.css";
 import logo from "../media/logo.png";
 import { Link } from "react-router-dom";
-
+import PlugIn from "../pages/PlugIn";
 const NavBar = () => {
   return (
     <div>
@@ -32,6 +32,7 @@ const NavBar = () => {
           </div>
           <div className="col-lg-3 col-md-12 col-12 btn-con">
             <div className="buttons">
+          
               <button className="btn">LogIn</button>
               <Link to={"/cartpage"}>
                 <button

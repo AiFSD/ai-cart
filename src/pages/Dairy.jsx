@@ -28,6 +28,7 @@ const Dairy = () => {
               >
                 <div className="row g-0 h-100 align-dairy-center">
                   <div className="col-4 h-100">
+                    {/* {console.log(dairy.image)} */}
                     <img
                       src={dairy.image}
                       className="img-fluid rounded-start product-img"
