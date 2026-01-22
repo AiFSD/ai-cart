@@ -8,7 +8,10 @@ const Category = () => {
     <div>
       <div className="container mt-5">
              <div className="col cartbtn-con">
-         
+           <div className="feedback">
+     <Link to="/feedback"> <button className="btn"> FeedBack </button></Link>
+      <Link to="/Patchwork"> <button className="btn" > Patch Work </button></Link>
+     </div>
           </div>
         <div className="row g-5 mt-5">
      

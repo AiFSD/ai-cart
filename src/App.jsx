@@ -11,6 +11,9 @@ import Beverages from "./pages/Beverages";
 import Dairy from "./pages/Dairy";
 import Discount from "./pages/Discount"
 import CartPage from "./pages/cartPage";
+import Upload from "./pages/Upload";
+import Feedback from "./pages/Feedback";
+import Patch from "./pages/Patch";
 
 const App = () => {
   return (
@@ -28,7 +31,9 @@ const App = () => {
           <Route path="/dairy" element={<Dairy/>} />
           <Route path="/discount" element={<Discount/>}/>
           <Route path="/cartpage" element={<CartPage/>}/>
-
+          <Route path="/upload" element={<Upload/>}/>
+          <Route path="/feedback" element={<Feedback/>}/>
+          <Route path="/Patchwork" element={<Patch/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

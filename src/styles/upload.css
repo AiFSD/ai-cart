@@ -1,0 +1,13 @@
+.form{
+     display:flex;
+     flex-direction: column;
+     gap:20px;
+     
+
+}
+.input1, .input2 , .input3 , .input4, .input5{
+     display:flex;
+     justify-content:center;
+     gap:20px;
+          text-align:center;
+}

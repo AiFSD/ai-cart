@@ -40,7 +40,7 @@ item.quantity -=1
           }
           ,
           removeLogic:(state , action ) => {
-               state.products = state.products.filter(product => product.id !== action.payload)
+      state.products = state.products.filter(product => product.id !== action.payload)
           localStorage.setItem("cartitems", JSON.stringify(state.products) )
           }
      }

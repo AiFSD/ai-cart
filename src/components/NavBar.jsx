@@ -1,7 +1,7 @@
 import "../styles/navbar.css";
 import logo from "../media/logo.png";
 import { Link } from "react-router-dom";
-import PlugIn from "../pages/PlugIn";
+
 const NavBar = () => {
   return (
     <div>
