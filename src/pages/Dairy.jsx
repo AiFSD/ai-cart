@@ -2,7 +2,7 @@ import "../styles/products.css";
 import { dairyData } from "../datas/dairyData";
 import { useDispatch, useSelector } from "react-redux";
 import { addLogic, increaseQty, decreaseQty } from "../redux/cartSlice";
-import { Link } from "react-router-dom";
+
 
 const Dairy = () => {
   const dispatch = useDispatch();

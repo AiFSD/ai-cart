@@ -14,6 +14,8 @@ import CartPage from "./pages/cartPage";
 import Upload from "./pages/Upload";
 import Feedback from "./pages/Feedback";
 import Patch from "./pages/Patch";
+import ProductsEdit from "./pages/productsEdit"
+
 
 const App = () => {
   return (
@@ -34,6 +36,7 @@ const App = () => {
           <Route path="/upload" element={<Upload/>}/>
           <Route path="/feedback" element={<Feedback/>}/>
           <Route path="/Patchwork" element={<Patch/>}/>
+<Route path="/edit/:id" element={<ProductsEdit />} />  // Add this line
         </Routes>
         <Footer />
       </BrowserRouter>
