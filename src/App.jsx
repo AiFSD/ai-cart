@@ -1,28 +1,29 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Veg from "./pages/Veg"
+import Veg from "./pages/Veg";
 
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Category from "./components/Category"
+import Category from "./components/Category";
 import Fruits from "./pages/Fruits";
 import Grains from "./pages/Grains";
 import Beverages from "./pages/Beverages";
 import Dairy from "./pages/Dairy";
-import Discount from "./pages/Discount"
+import Discount from "./pages/Discount";
 import CartPage from "./pages/cartPage";
+
 import Upload from "./pages/Upload";
 import Feedback from "./pages/Feedback";
 import Patch from "./pages/Patch";
-import ProductsEdit from "./pages/productsEdit"
+import ProductsEdit from "./pages/productsEdit";
 
+import Registration from "./pages/Registration";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
     <div>
-    
       <BrowserRouter>
-      
         <NavBar />
         <Routes>
           <Route path="/" element={<Category />} />
@@ -30,18 +31,25 @@ const App = () => {
           <Route path="/fruits" element={<Fruits />} />
           <Route path="/grains" element={<Grains />} />
           <Route path="/beverages" element={<Beverages />} />
-          <Route path="/dairy" element={<Dairy/>} />
-          <Route path="/discount" element={<Discount/>}/>
-          <Route path="/cartpage" element={<CartPage/>}/>
-          <Route path="/upload" element={<Upload/>}/>
-          <Route path="/feedback" element={<Feedback/>}/>
-          <Route path="/Patchwork" element={<Patch/>}/>
-<Route path="/edit/:id" element={<ProductsEdit />} />  // Add this line
+
+          <Route path="/dairy" element={<Dairy />} />
+          <Route path="/discount" element={<Discount />} />
+          <Route path="/cartpage" element={<CartPage />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/Patchwork" element={<Patch />} />
+          <Route path="/edit/:id" element={<ProductsEdit />} />
+
+          <Route path="/dairy" element={<Dairy />} />
+          <Route path="/discount" element={<Discount />} />
+          <Route path="/cartpage" element={<CartPage />} />
+          <Route path="/register" element={<Registration />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </div>
   );
-}
+};
 
-export default App
+export default App;

@@ -32,8 +32,10 @@ const NavBar = () => {
           </div>
           <div className="col-lg-3 col-md-12 col-12 btn-con">
             <div className="buttons">
-          
-              <button className="btn">LogIn</button>
+              <Link to={"/register"}>
+                <button className="button">LogIn</button>
+              </Link>
+
               <Link to={"/cartpage"}>
                 <button
                   style={{ justifyContent: "center", padding: "20px" }}

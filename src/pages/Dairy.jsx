@@ -28,7 +28,6 @@ const Dairy = () => {
               >
                 <div className="row g-0 h-100 align-dairy-center">
                   <div className="col-4 h-100">
-                    {/* {console.log(dairy.image)} */}
                     <img
                       src={dairy.image}
                       className="img-fluid rounded-start product-img"
@@ -38,7 +37,9 @@ const Dairy = () => {
                   <div className="col-8">
                     <div className="card-body">
                       <h5 className="card-title fw-bold">{dairy.name}</h5>
-                      <p className="mb-1 text-muted">Price: ₹{dairy.price}/kg</p>
+                      <p className="mb-1 text-muted">
+                        Price: ₹{dairy.price}/kg
+                      </p>
                       <p className="text-success fw-bold">{dairy.offer}% Off</p>
 
                       {inCart && inCart.quantity > 0 ? (
