@@ -3,6 +3,9 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { removeLogic, increaseQty, decreaseQty } from "../redux/cartSlice";
 import "../styles/cartPage.css";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+
 
 const CartPage = () => {
   const dispatch = useDispatch();
@@ -12,6 +15,8 @@ const CartPage = () => {
     0
   );
   return (
+    <>
+    <NavBar/>
     <div>
       <div className="container back-con mt-5 ">
         <Link to={"/"}>
@@ -77,6 +82,8 @@ const CartPage = () => {
         </div>
       </div>
     </div>
+   <Footer/>
+    </>
   );
 };
 

@@ -49,3 +49,9 @@
 .login-btn:hover {
     opacity: 0.9;
 }
+
+.button{
+     background: linear-gradient(135deg, #43cea2, #185a9d);
+     color:black;
+     padding:10px;
+}

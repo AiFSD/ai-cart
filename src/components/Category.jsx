@@ -1,10 +1,12 @@
 import "../styles/cat.css";
 import { category } from "../datas/category";
 import { Link } from "react-router-dom";
-
-
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 const Category = () => {
   return (
+    <>
+    <NavBar/>
     <div>
       <div className="container mt-5">
              <div className="col cartbtn-con">
@@ -30,6 +32,8 @@ const Category = () => {
         </div>
       </div>
     </div>
+<Footer/>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import "../styles/navbar.css";
 import logo from "../media/logo.png";
 import { Link } from "react-router-dom";
+import Logout from "./LogOut";
 
 const NavBar = () => {
   return (
@@ -28,13 +29,15 @@ const NavBar = () => {
             </div>
           </div>
           <div className="col-lg-2 d-none  d-lg-block">
-            <h4 className="heading">Farm2Home</h4>
+            <Logout/>
           </div>
           <div className="col-lg-3 col-md-12 col-12 btn-con">
             <div className="buttons">
-              <Link to={"/register"}>
-                <button className="button">LogIn</button>
-              </Link>
+            
+                 <Link to={"/register"}>
+                  <button className="button mt-2">Register</button></Link>
+               
+             
 
               <Link to={"/cartpage"}>
                 <button
